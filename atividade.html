@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        table {
+            width: 25%;
+            text-align: center;
+        }
+        fieldset {
+            width: 10%;
+        }
+    </style>
+    <title>Atividade</title>
+</head>
+<body>
+    <ul>
+        <li>Abacaxi</li>
+        <li>Amora</li>
+        <li>Morango</li>
+    </ul>
+    <ol>
+        <li>Abacaxi</li>
+        <lI>Amora</lI>
+        <li>Morango</li>
+    </ol>
+    <!--
+        Morango muito bom
+    -->
+    <table>
+        <tr>
+            <th>Frutas</th>
+            <th>Preços</th>
+            <th>Peso</th>
+        </tr>
+        <tr>
+            <td>Abacaxi</td>
+            <td>R$ 24,99</td>
+            <td>1KG</td>
+        </tr>
+        <tr>
+            <td>Amora</td>
+            <td>R$ 75,00</td>
+            <td>1KG</td>
+        </tr>
+        <tr>
+            <td>Morango</td>
+            <td>R$ 25,99</td>
+            <td>1KG</td>
+        </tr>
+    </table>
+    <!--
+        amora é caro
+    -->
+    <table>
+        <tr> <br>
+        <th>Frutaria</th>
+        <th colspan="2">Telefones</th>
+        </tr>
+        <td>Doces Frutas</td>
+        <td>(44) 99199-99199</td>
+        <td>(44) 38383-3838</td>
+    </table>
+    <table>
+        <tr> <br>   
+            <th>Cliente</th>
+            <td>Joaquim</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefone:</th>
+            <td>(44) 98989-98989</td>
+        </tr>
+        <tr>
+            <td>(44) 3232-4343</td>
+        </tr>
+    </table><br>
+    
+<form action="enviar.py">
+    <fieldset>
+    Nome do Cliente:<br>
+    <input type="text" name="Nome"> <br>
+    Número do Cliente<br>
+    <input type="text" name="Número"><br> 
+    <br>
+    <textarea name="sugestao" rows="10" cols="30"> Digite sua sugestão aqui</textarea><br><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar"><br>
+    </fieldset><br>
+    <fieldset>
+    <form>
+        Fruta que deseja pedir:<br>
+        <input type="radio" name="fruta" value="Todas" checked> Todas<br>
+        <input type="radio" name="fruta" value="Amora"> Amora<br>
+        <input type="radio" name="fruta" value="Abacaxi"> Abacaxi<br>
+        <input type="radio" name="fruta" value="Morango"> Morango
+    </form>
+    </fieldset>
+    <fieldset>
+        <form>
+            Data Solicitada
+            <input type="datetime-local">
+        </form>
+    </fieldset>
+</body>
+</html>
